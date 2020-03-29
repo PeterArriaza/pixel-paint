@@ -9,7 +9,7 @@ const App = () => {
   return (
     <div className="App">
       <ColorPicker currentColor={color} setColor={color => setColor(color)} />
-      <Canvas />
+      <Canvas currentColor={color} />
     </div>
   );
 };

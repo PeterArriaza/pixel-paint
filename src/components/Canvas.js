@@ -1,14 +1,19 @@
-import React, { Component, useState } from 'react';
+import React, { useState } from 'react';
 import Colors from '../Colors';
 import Pixel from './Pixel';
 
-const Canvas = () => {
+const Canvas = props => {
   const size = 20;
   const [matrix, setMatrix] = useState(
     Array(parseInt(size))
       .fill()
       .map(() => Array(parseInt(size)).fill(0))
   );
+  const changeColor = (rowIndex, colIndex) => {
+    const newMatrix = JSON.parse(JSON.stringify(matrix));
+    newMatrix[rowIndex][colIndex] = props.currentColor;
+    setMatrix(newMatrix);
+  };
 
   return (
     <div className={'canvas'}>
@@ -18,6 +23,7 @@ const Canvas = () => {
             <Pixel
               key={`${rowIndex}-${colIndex}`}
               background={Colors[matrix[rowIndex][colIndex]]}
+              onClick={() => changeColor(rowIndex, colIndex)}
             />
           );
         })
