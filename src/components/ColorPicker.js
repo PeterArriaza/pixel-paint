@@ -4,7 +4,7 @@ import Colors from '../Colors';
 
 export default props => {
   return (
-    <div className="colorpicker">
+    <div className={'colorpicker'}>
       {Colors.map((color, index) => {
         return (
           <Pixel

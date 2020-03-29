@@ -1,0 +1,83 @@
+.lightblue {
+  background-color: rgb(0, 188, 212);
+}
+
+.blue {
+  background-color: rgb(1, 88, 218);
+}
+
+.darkblue {
+  background-color: rgb(21, 96, 158);
+}
+
+.lightgreen {
+  background-color: rgb(24, 216, 62);
+}
+
+.green {
+  background-color: rgb(0, 153, 31);
+}
+
+.darkgreen {
+  background-color: rgb(4, 88, 21);
+}
+
+.lightred {
+  background-color: rgb(221, 85, 85);
+}
+
+.red {
+  background-color: rgb(224, 0, 0);
+}
+
+.darkred {
+  background-color: rgb(138, 10, 10);
+}
+
+.lightyellow {
+  background-color: rgb(232, 230, 89);
+}
+
+.yellow {
+  background-color: rgb(255, 251, 5);
+}
+
+.darkyellow {
+  background-color: rgb(194, 191, 10);
+}
+
+.lightorange {
+  background-color: rgb(231, 165, 85);
+}
+
+.orange {
+  background-color: rgb(255, 147, 15);
+}
+
+.darkorange {
+  background-color: rgb(180, 108, 19);
+}
+
+.lightpurple {
+  background-color: rgb(168, 96, 235);
+}
+
+.purple {
+  background-color: rgb(121, 0, 235);
+}
+
+.darkpurple {
+  background-color: rgb(81, 13, 145);
+}
+
+.white {
+  background-color: white;
+}
+
+.gray {
+  background-color: rgb(125, 125, 125);
+}
+
+.black {
+  background-color: rgb(20, 20, 20);
+}

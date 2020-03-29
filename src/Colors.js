@@ -1,1 +1,23 @@
-export default ['white', 'lightblue', 'blue', 'darkblue'];
+export default [
+  'white',
+  'gray',
+  'black',
+  'lightred',
+  'red',
+  'darkred',
+  'lightorange',
+  'orange',
+  'darkorange',
+  'lightyellow',
+  'yellow',
+  'darkyellow',
+  'lightgreen',
+  'green',
+  'darkgreen',
+  'lightblue',
+  'blue',
+  'darkblue',
+  'lightpurple',
+  'purple',
+  'darkpurple'
+];

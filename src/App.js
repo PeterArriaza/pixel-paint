@@ -1,5 +1,6 @@
 import React, { useState } from 'react';
 import './App.css';
+import './colors.css';
 import Canvas from './components/Canvas';
 import ColorPicker from './components/ColorPicker';
 import CanvasOptions from './components/CanvasOptions';
