@@ -3,10 +3,11 @@ import Colors from '../Colors';
 import Pixel from './Pixel';
 
 const Canvas = () => {
+  const size = 20;
   const [matrix, setMatrix] = useState(
-    Array(30)
+    Array(parseInt(size))
       .fill()
-      .map(() => Array(30).fill(0))
+      .map(() => Array(parseInt(size)).fill(0))
   );
 
   return (
