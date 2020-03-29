@@ -16,17 +16,15 @@
 
 .App {
   background-color: #333;
-  display: flex;
-  justify-content: center;
-  align-items: center;
+
   min-height: 100vh;
 }
 
 /* set max-width based on # of pixels in canvas row/col */
 .canvas {
   display: flex;
-  flex-wrap: wrap;
-  max-width: 600px;
+  justify-content: center;
+  align-items: center;
 }
 
 .pixel {

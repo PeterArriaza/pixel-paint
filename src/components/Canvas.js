@@ -1,13 +1,15 @@
-import React, { useState } from 'react';
+import React, { useState, useEffect } from 'react';
 import Colors from '../Colors';
 import Pixel from './Pixel';
+import { StyleSheet, css } from 'aphrodite';
 
 const Canvas = props => {
-  const size = 20;
+  let size = props.size;
+  const maxWidth = size * 30;
   const [matrix, setMatrix] = useState(
-    Array(parseInt(size))
+    Array(size)
       .fill()
-      .map(() => Array(parseInt(size)).fill(0))
+      .map(() => Array(size).fill(0))
   );
   const changeColor = (rowIndex, colIndex) => {
     const newMatrix = JSON.parse(JSON.stringify(matrix));
@@ -15,8 +17,21 @@ const Canvas = props => {
     setMatrix(newMatrix);
   };
 
+  const styles = StyleSheet.create({
+    // 30px * # Pixels
+    canvas: {
+      maxWidth: maxWidth,
+      maxHeight: maxWidth,
+      display: 'flex',
+      flexWrap: 'wrap',
+      marginTop: 30
+    }
+  });
+
+  // useEffect(() => (size = props.size));
+
   return (
-    <div className={'canvas'}>
+    <div className={css(styles.canvas)}>
       {matrix.map((row, rowIndex) =>
         row.map((_, colIndex) => {
           return (
