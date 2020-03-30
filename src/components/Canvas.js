@@ -15,6 +15,7 @@ const Canvas = props => {
     const newMatrix = JSON.parse(JSON.stringify(matrix));
     newMatrix[rowIndex][colIndex] = props.currentColor;
     setMatrix(newMatrix);
+    props.setMsatrixState(newMatrix);
   };
 
   const styles = StyleSheet.create({
